@@ -7,7 +7,7 @@ public class DistanceTracker : MonoBehaviour
     public GameObject Player;
     public GameObject Workplace;
 
-    private float Distance;
+    public float Distance;
 
     void Start()
     {
@@ -20,6 +20,10 @@ public class DistanceTracker : MonoBehaviour
         Distance = Vector3.Distance(Player.transform.position, Workplace.transform.position);
 
         // Output the distance to the console
-        Debug.Log($"Distance to workplace: {Distance} meters");
+        if(Input.GetKey(KeyCode.Space))
+        {
+            Debug.Log($"Distance to workplace: {Distance} meters");
+        }
+        
     }
 }

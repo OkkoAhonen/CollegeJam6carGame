@@ -11,13 +11,17 @@ public class ProgressBar : DistanceTracker
     // Start is called before the first frame update
     void Start()
     {
-        Progress(1.5f);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Q))
+        {
+            Progress(Distance);
+            Debug.Log(Distance + "Toimii progress bar");
+        }
     }
 
     public void Progress(float newProgress)
@@ -32,5 +36,7 @@ public class ProgressBar : DistanceTracker
         }
 
         progressbar.transform.localScale = new Vector3 (progress, progressbar.transform.localScale.y, progressbar.transform.localScale.z);
+
+        
     }
 }

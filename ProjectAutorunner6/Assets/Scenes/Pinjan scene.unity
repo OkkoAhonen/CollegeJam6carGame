@@ -222,6 +222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 125050227}
   Workplace: {fileID: 1911595874}
+  Distance: 0
 --- !u!1 &847051190
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,6 +425,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc45eab20102144891290c8d1c3aa9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 125050227}
+  Workplace: {fileID: 1911595874}
+  Distance: 0
   progressbar: {fileID: 1598118012}
 --- !u!114 &1598118012
 MonoBehaviour:
