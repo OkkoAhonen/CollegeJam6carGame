@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class roadscript : MonoBehaviour
 {
-
+  
     public Renderer meshRenderer;
-    float speed = 0.1f;
+    public float speed = 3f;
     // Start is called before the first frame update
     void Start()
     {
