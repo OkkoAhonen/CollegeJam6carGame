@@ -454,3 +454,11 @@ Received Import Request.
 Start importing Assets/Art/White Spike Square.prefab using Guid(609c451b2ecd2584aacd95e42946d918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06002414807367e672b9828c5e34299a') in 0.268614 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 8674.034991 seconds.
+  path: Assets/Art/Emissive Material.mat
+  artifactKey: Guid(7de930c832bec4c40a85642dbddddc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Emissive Material.mat using Guid(7de930c832bec4c40a85642dbddddc58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fbb0f558028aae0b81abfce6ac69850') in 0.260016 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
