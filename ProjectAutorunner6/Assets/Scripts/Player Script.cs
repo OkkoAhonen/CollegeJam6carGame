@@ -31,4 +31,14 @@ public class PlayerScript : MonoBehaviour
         transform.position -= new Vector3(0, transform.rotation.z + 0.00001f * -currentSpeed * transform.rotation.z, 0);
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "pahis")
+        {
+            Debug.Log("Pahis kuollu ja sina kuollu");
+        }
+    }
+
+
 }
