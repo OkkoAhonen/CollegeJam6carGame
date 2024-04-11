@@ -568,6 +568,7 @@ MonoBehaviour:
   turnpower: 5
   carHealth: 10
   currentSpeed: 1
+  laskuri: 1
 --- !u!212 &316133248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -667,7 +668,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.057373285, y: 0.028687894}
+  m_Offset: {x: -0.012437582, y: -0.06904805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -678,7 +679,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.3807445, y: 2.474372}
+  m_Size: {x: 3.738481, y: 1.2177684}
   m_EdgeRadius: 0
 --- !u!50 &316133251
 Rigidbody2D:
@@ -5641,6 +5642,53 @@ MonoBehaviour:
   - {fileID: 1473659704}
   - {fileID: 1094205972}
   "spawnAikaV\xE4li": 2
+--- !u!1 &948612559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 948612561}
+  - component: {fileID: 948612560}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &948612560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948612559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77dcc6675afed174ba9699ef52b7eaba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingScore: 0
+  scoreIncreaseRate: 5
+  playerScript: {fileID: 316133247}
+--- !u!4 &948612561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948612559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -45.828247, y: 2.4723449, z: -7.501801}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1000677009
 GameObject:
   m_ObjectHideFlags: 0
@@ -6303,3 +6351,4 @@ SceneRoots:
   - {fileID: 278717130}
   - {fileID: 7236776404945922998}
   - {fileID: 317203484}
+  - {fileID: 948612561}

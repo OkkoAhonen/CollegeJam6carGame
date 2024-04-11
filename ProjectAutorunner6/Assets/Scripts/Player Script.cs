@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
     public float accelerationSpeed, maxSpeed, turnpower, carHealth, currentSpeed;
+    public bool laskuri = true;
 
     void Start()
     {
@@ -36,7 +37,10 @@ public class PlayerScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "pahis")
         {
+            laskuri = false;
             Debug.Log("Pahis kuollu ja sina kuollu");
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 
