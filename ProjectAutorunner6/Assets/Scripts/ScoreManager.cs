@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
     private float currentScore; // Pelaajan nykyinen pistem‰‰r‰
 
     public PlayerScript playerScript;
-
+    /*
     bool laskuri2 = playerScript.laskuri;
    
     
@@ -45,4 +45,6 @@ void PrintScoreToConsole()
     {
         return currentScore;
     }
+}
+*/
 }
